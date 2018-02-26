@@ -36,14 +36,14 @@ Sample GraphQL server response..
         "User": {
             "name": "Himanshu Sahu",
             "posts": [
-                { title: "Learning GraphQL today" },
-                { title: "Learning GraphQL tomorrow" },
-                { title: "Will learn GraphQL forever" }
+                { "title": "Learning GraphQL today" },
+                { "title": "Learning GraphQL tomorrow" },
+                { "title": "Will learn GraphQL forever" }
             ],
             "followers": [
-                { name: "John" },
-                { name: "Alice" },
-                { name: "Bob" }
+                { "name": "John" },
+                { "name": "Alice" },
+                { "name": "Bob" }
             ]
         }
     }
@@ -108,11 +108,11 @@ Sample GraphQL request (person with name)
 Sample GraphQL response (person with name)
 ```json
 {
-    allPersons: {
-        { name: "Himanshu" },
-        { name: "Alice" },
-        { name: "Bob" }
-    }
+    allPersons: [
+        { "name": "Himanshu" },
+        { "name": "Alice" },
+        { "name": "Bob" }
+    ]
 }
 ```
 
@@ -129,10 +129,10 @@ Sample GraphQL request (person with name and age both, will return only last 2 r
 Sample GraphQL response (person with name and age both)
 ```json
 {
-    allPersons: {
-        { name: "Himanshu", age: 23 },
-        { name: "Alice", age: 34 }
-    }
+    allPersons: [
+        { "name": "Himanshu", "age": 23 },
+        { "name": "Alice", "age": 34 }
+    ]
 }
 ```
 

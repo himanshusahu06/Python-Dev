@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # After the default packages
     'graphene_django',
     'links',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ STATIC_URL = '/static/'
 GRAPHENE = {
     'SCHEMA': 'hackernews.schema.schema',
 }
+
+AUTH_USER_MODEL = 'users.User'
