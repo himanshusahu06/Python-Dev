@@ -108,7 +108,7 @@ Sample GraphQL request (person with name)
 Sample GraphQL response (person with name)
 ```json
 {
-    allPersons: [
+    "allPersons": [
         { "name": "Himanshu" },
         { "name": "Alice" },
         { "name": "Bob" }
@@ -129,7 +129,7 @@ Sample GraphQL request (person with name and age both, will return only last 2 r
 Sample GraphQL response (person with name and age both)
 ```json
 {
-    allPersons: [
+    "allPersons": [
         { "name": "Himanshu", "age": 23 },
         { "name": "Alice", "age": 34 }
     ]
